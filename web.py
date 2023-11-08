@@ -30,7 +30,7 @@ Map = geemap.Map(
     plugin_Draw=True,
     Draw_export=True,
     locate_control=True,
-    plugin_LatLngPopup=False, center=map_center, zoom=6.25,
+    plugin_LatLngPopup=False, center=map_center, zoom=8,
 )
 
 ed = date.today()
@@ -43,7 +43,7 @@ endDate = ed.strftime("%Y-%m-%d") + "T"
 
 se2 = ee.ImageCollection('COPERNICUS/S2_SR').filterDate(
             startDate,endDate).filter(
-            ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE",90)).map(maskCloudAndShadows).median()
+            ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE",80)).map(maskCloudAndShadows).median()
 
 
 band = ['B4','B3','B2']
