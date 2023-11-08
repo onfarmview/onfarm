@@ -1,5 +1,6 @@
 import folium
 import pandas
+import geemap.foliumap as geemap
 
 data = pandas.read_csv("volcanoes.csv")
 lat = list(data["LAT"])
@@ -24,7 +25,7 @@ def pickcolor(elevation):
     else:
         return "red"
 
-map = folium.Map(location=[-43.64544350688903, 172.46472254972872], zoom_start = 6)
+map = folium.Map(location=[-43.64544350688903, 172.46472254972872], zoom_start = 6, basemap="HYBRID",)
 
 fg = folium.FeatureGroup(name="My Map")
 
@@ -42,4 +43,4 @@ for lt, ln, el, name in zip(lat, lon, elev, name):
 
 map.add_child(fg)
 
-map.save("map.html")
+map.save("index.html")
