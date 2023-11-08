@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <title>OnFarmView - Vegetation Indices and Spectral Imagery</title>
+
+    <meta name="keywords" content="Vegetation Indices, NDVI Calculation, NDWI Interpretation, Near-Infrared Imaging, Crop Health Assessment, Plant Stress Detection, Moisture Content Analysis, RGB Imagery Evaluation, Precision Agriculture, Agricultural Spectral Analysis">
+
+    <meta name="description" content="Explore a wide range of vegetation indices, including NDVI and NDWI, to assess the health and vigor of crops. Analyze Near-Infrared (NIR) imagery for detailed insights into plant stress levels and moisture content. View high-resolution Red-Green-Blue (RGB) imagery for visual assessments and mapping. OnFarmView provides powerful tools for precise agricultural analysis.">
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
         <script>
@@ -25,7 +30,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_28f7bc683f398b98c0737d86859711c3 {
+                #map_a103d5f6242ff5cc52059c7200a3d175 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -65,16 +70,17 @@
 </head>
 <body>
     
-    
-            <div class="folium-map" id="map_28f7bc683f398b98c0737d86859711c3" ></div>
+			<p>Contact us at <a href="mailto:admin@onfarmview.com">admin@onfarmview.com</a>.</p>
+
+            <div class="folium-map" id="map_a103d5f6242ff5cc52059c7200a3d175" ></div>
         
     <a href='#' id='export'>Export</a>
 </body>
 <script>
     
     
-            var map_28f7bc683f398b98c0737d86859711c3 = L.map(
-                "map_28f7bc683f398b98c0737d86859711c3",
+            var map_a103d5f6242ff5cc52059c7200a3d175 = L.map(
+                "map_a103d5f6242ff5cc52059c7200a3d175",
                 {
                     center: [-43.52565, 172.639847],
                     crs: L.CRS.EPSG3857,
@@ -98,21 +104,21 @@
 
         
     
-            var tile_layer_5c2dc7f0cff3ff967d147819f47b8772 = L.tileLayer(
+            var tile_layer_a659ef8a32b15485c92192ccb70c0a8e = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 30, "maxZoom": 30, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
     
-            var tile_layer_8ef283d5477e39f8a28c8d491462df9d = L.tileLayer(
+            var tile_layer_f13011ad682538a32fd1b76f9e5e41c6 = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
                 {"attribution": "Esri", "detectRetina": false, "maxNativeZoom": 22, "maxZoom": 22, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
     
             L.control.fullscreen(
                 {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
     
             var options = {
@@ -122,13 +128,13 @@
             }
             // FeatureGroup is to store editable layers.
             var drawnItems = new L.featureGroup().addTo(
-                map_28f7bc683f398b98c0737d86859711c3
+                map_a103d5f6242ff5cc52059c7200a3d175
             );
             options.edit.featureGroup = drawnItems;
-            var draw_control_93ae6756e4a5fae9038015a30821b7a6 = new L.Control.Draw(
+            var draw_control_dc153891f05db51704b1976edb486299 = new L.Control.Draw(
                 options
-            ).addTo( map_28f7bc683f398b98c0737d86859711c3 );
-            map_28f7bc683f398b98c0737d86859711c3.on(L.Draw.Event.CREATED, function(e) {
+            ).addTo( map_a103d5f6242ff5cc52059c7200a3d175 );
+            map_a103d5f6242ff5cc52059c7200a3d175.on(L.Draw.Event.CREATED, function(e) {
                 var layer = e.layer,
                     type = e.layerType;
                 var coords = JSON.stringify(layer.toGeoJSON());
@@ -138,7 +144,7 @@
                 });
                 drawnItems.addLayer(layer);
              });
-            map_28f7bc683f398b98c0737d86859711c3.on('draw:created', function(e) {
+            map_a103d5f6242ff5cc52059c7200a3d175.on('draw:created', function(e) {
                 drawnItems.addLayer(e.layer);
             });
             
@@ -156,101 +162,101 @@
             
         
     
-            var locate_control_20a5ad9818919c60f77896f80e611f5d = L.control.locate(
+            var locate_control_adb37463f586d7ff222a8c5451055429 = L.control.locate(
                 {}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
             
         
     
             L.Control.geocoder(
                 {"collapsed": true, "defaultMarkGeocode": true, "position": "topleft"}
             ).on('markgeocode', function(e) {
-                map_28f7bc683f398b98c0737d86859711c3.setView(e.geocode.center, 11);
-            }).addTo(map_28f7bc683f398b98c0737d86859711c3);
+                map_a103d5f6242ff5cc52059c7200a3d175.setView(e.geocode.center, 11);
+            }).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
 
         
     
-            map_28f7bc683f398b98c0737d86859711c3.fitBounds(
+            map_a103d5f6242ff5cc52059c7200a3d175.fitBounds(
                 [[-43.52565, 172.639847], [-43.52565, 172.639847]],
                 {"maxZoom": 8}
             );
         
     
-            var tile_layer_f9a0c2a296878fece1f09b8ecdff58b5 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/95c195ce8fc019cb7bc62f661c7a1934-378d0e0ad3344b5ff4d681e447bf1b6c/tiles/{z}/{x}/{y}",
+            var tile_layer_a52b0b83fc1932107c4c29736e85a5ff = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/2a123ef5e443b85f0f11750e2c5ffcb8-ac8a39be4bd2814a9311876237578808/tiles/{z}/{x}/{y}",
                 {"attribution": "Google Earth Engine", "detectRetina": false, "maxNativeZoom": 24, "maxZoom": 24, "minZoom": 0, "noWrap": false, "opacity": 1.0, "subdomains": "abc", "tms": false}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
     
-            var tile_layer_b9654615e85761496ee732f7b7bc6d3a = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/0824c6cdb78fdf61080485cf73b4701b-f68286eff3b38a048af8739f13d07b39/tiles/{z}/{x}/{y}",
+            var tile_layer_943c4208c9a4b096fb58e80a40610329 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/ec1d8e0fb4002ced2da03f88321a7d42-bf9193b9b421fc9ec107bcdcd52eb124/tiles/{z}/{x}/{y}",
                 {"attribution": "Google Earth Engine", "detectRetina": false, "maxNativeZoom": 24, "maxZoom": 24, "minZoom": 0, "noWrap": false, "opacity": 1.0, "subdomains": "abc", "tms": false}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
     
-            var tile_layer_c820242d23dc3fcef2e4ccd64267e26f = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/37880d538b22affbaaf633a28f337bd1-93d12b40e12fa79eb8674c518d587d8c/tiles/{z}/{x}/{y}",
+            var tile_layer_f7f1439f3be58ef1d285094041ca05b6 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/d0338697a8717af7bb11338b2e8124b1-ff1bcb5867c4c73923e56ae38c3b154c/tiles/{z}/{x}/{y}",
                 {"attribution": "Google Earth Engine", "detectRetina": false, "maxNativeZoom": 24, "maxZoom": 24, "minZoom": 0, "noWrap": false, "opacity": 1.0, "subdomains": "abc", "tms": false}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
     
-            var tile_layer_ed5093c55108263bd626dcc939e50495 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/533fa0ba08d6a019209fe60490858c5c-1cd8712ecd606a73c717f9ee040b0c47/tiles/{z}/{x}/{y}",
+            var tile_layer_9cf9ce4687f03c1897031ea9d885b22f = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/dd1d2c722cc8a487293d680b3b36ee0a-bcb395de9f0d359b0b0815d7382c8263/tiles/{z}/{x}/{y}",
                 {"attribution": "Google Earth Engine", "detectRetina": false, "maxNativeZoom": 24, "maxZoom": 24, "minZoom": 0, "noWrap": false, "opacity": 1.0, "subdomains": "abc", "tms": false}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
     
-            var tile_layer_c44e431997cc7b2338e499b87d15a9bb = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/07cba4865990ce8900d85d347e34ac14-5b1a556ec4d5b6cda8b6901699a35412/tiles/{z}/{x}/{y}",
+            var tile_layer_4df4c9bc1cba1f7ba1770f5b94fac388 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/28a2417f1699a99508f7cc3bc63f5678-cbf36ad02b0ed8e1edfa664b00e5869e/tiles/{z}/{x}/{y}",
                 {"attribution": "Google Earth Engine", "detectRetina": false, "maxNativeZoom": 24, "maxZoom": 24, "minZoom": 0, "noWrap": false, "opacity": 1.0, "subdomains": "abc", "tms": false}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
     
-            var marker_65fcc4f8a68a0f1e65426b3632b02134 = L.marker(
+            var marker_2386010ffbe156e138a6997b688afbd4 = L.marker(
                 [-43.52565, 172.639847],
                 {}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
     
-            var icon_aab7cd57507cc9a85fb9d013271c4d93 = L.AwesomeMarkers.icon(
+            var icon_164f74f1b6b9bc1d2a42bdacb152ef0d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_65fcc4f8a68a0f1e65426b3632b02134.setIcon(icon_aab7cd57507cc9a85fb9d013271c4d93);
+            marker_2386010ffbe156e138a6997b688afbd4.setIcon(icon_164f74f1b6b9bc1d2a42bdacb152ef0d);
         
     
-        var popup_b704740a157cd2eb94bf7b02acc4eea9 = L.popup({"maxWidth": "100%"});
+        var popup_1a60a52820740149ec572f0a9064734f = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_059a1ad3c95a183aa9d7e1fee99a74cb = $(`<div id="html_059a1ad3c95a183aa9d7e1fee99a74cb" style="width: 100.0%; height: 100.0%;">Contact: admin@onfarmview.com</div>`)[0];
-                popup_b704740a157cd2eb94bf7b02acc4eea9.setContent(html_059a1ad3c95a183aa9d7e1fee99a74cb);
+                var html_3e4ed9845c28763db5f21c8209e89993 = $(`<div id="html_3e4ed9845c28763db5f21c8209e89993" style="width: 100.0%; height: 100.0%;">Contact: admin@onfarmview.com</div>`)[0];
+                popup_1a60a52820740149ec572f0a9064734f.setContent(html_3e4ed9845c28763db5f21c8209e89993);
             
         
 
-        marker_65fcc4f8a68a0f1e65426b3632b02134.bindPopup(popup_b704740a157cd2eb94bf7b02acc4eea9)
+        marker_2386010ffbe156e138a6997b688afbd4.bindPopup(popup_1a60a52820740149ec572f0a9064734f)
         ;
 
         
     
     
-            var layer_control_cabd00f3339a4262133b2308d4816ab0 = {
+            var layer_control_58218440a55bb5d948efebf16b4b4e9a = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_5c2dc7f0cff3ff967d147819f47b8772,
+                    "openstreetmap" : tile_layer_a659ef8a32b15485c92192ccb70c0a8e,
                 },
                 overlays :  {
-                    "Esri.WorldImagery" : tile_layer_8ef283d5477e39f8a28c8d491462df9d,
-                    "Sentinel 2 - Natural Color" : tile_layer_f9a0c2a296878fece1f09b8ecdff58b5,
-                    "Sentinel 2 - Color Infrared" : tile_layer_b9654615e85761496ee732f7b7bc6d3a,
-                    "Sentinel 2 - Agriculture" : tile_layer_c820242d23dc3fcef2e4ccd64267e26f,
-                    "Sentinel 2 - Vegetation Analysis" : tile_layer_ed5093c55108263bd626dcc939e50495,
-                    "Sentinel 2 - Healthy Vegetation" : tile_layer_c44e431997cc7b2338e499b87d15a9bb,
+                    "Esri.WorldImagery" : tile_layer_f13011ad682538a32fd1b76f9e5e41c6,
+                    "Sentinel 2 - Natural Color" : tile_layer_a52b0b83fc1932107c4c29736e85a5ff,
+                    "Sentinel 2 - Color Infrared" : tile_layer_943c4208c9a4b096fb58e80a40610329,
+                    "Sentinel 2 - Agriculture" : tile_layer_f7f1439f3be58ef1d285094041ca05b6,
+                    "Sentinel 2 - Vegetation Analysis" : tile_layer_9cf9ce4687f03c1897031ea9d885b22f,
+                    "Sentinel 2 - Healthy Vegetation" : tile_layer_4df4c9bc1cba1f7ba1770f5b94fac388,
                 },
             };
             L.control.layers(
-                layer_control_cabd00f3339a4262133b2308d4816ab0.base_layers,
-                layer_control_cabd00f3339a4262133b2308d4816ab0.overlays,
+                layer_control_58218440a55bb5d948efebf16b4b4e9a.base_layers,
+                layer_control_58218440a55bb5d948efebf16b4b4e9a.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_28f7bc683f398b98c0737d86859711c3);
+            ).addTo(map_a103d5f6242ff5cc52059c7200a3d175);
         
 </script>
 </html>
