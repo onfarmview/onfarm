@@ -22,7 +22,7 @@ ee_authenticate(token_name="4/1AfJohXkTlWMKd8fPevD3hd4tAq_j-YlD2CabTy7QtM7iu1gNB
 map_center=(-43.525650, 172.639847)
 popup_message = 'Contact: admin@onfarmview.com'
 crs = "epsg:4326"
-band = ['B4','B3','B2']
+band = ['B8','B4','B3']
 rgbViza = {"min":0.0, "max":0.7,"bands":band}
 
 Map = geemap.Map(
@@ -45,7 +45,7 @@ se2 = ee.ImageCollection('COPERNICUS/S2_SR').filterDate(
             startDate,endDate).filter(
             ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE",90)).map(maskCloudAndShadows).median()
 
-titlemap = "Sentinel 2 "
+titlemap = "Sentinel 2 without clouds"
 
 Map.addLayer(se2, rgbViza, titlemap)
 
