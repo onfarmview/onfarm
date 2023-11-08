@@ -24,7 +24,7 @@ def pickcolor(elevation):
     else:
         return "red"
 
-map = folium.Map(location=[46.1997986,-122.1809998], zoom_start = 6)
+map = folium.Map(location=[-43.64544350688903, 172.46472254972872], zoom_start = 6)
 
 fg = folium.FeatureGroup(name="My Map")
 
