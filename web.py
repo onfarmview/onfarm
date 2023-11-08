@@ -45,9 +45,33 @@ se2 = ee.ImageCollection('COPERNICUS/S2_SR').filterDate(
             startDate,endDate).filter(
             ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE",90)).map(maskCloudAndShadows).median()
 
-titlemap = "Sentinel 2 without clouds"
 
+band = ['B4','B3','B2']
+rgbViza = {"min":0.0, "max":0.7,"bands":band}
+titlemap = "Sentinel 2 - Natural Color"
 Map.addLayer(se2, rgbViza, titlemap)
+
+
+band = ['B8','B4','B3']
+rgbViza = {"min":0.0, "max":0.7,"bands":band}
+titlemap = "Sentinel 2 - Color Infrared"
+Map.addLayer(se2, rgbViza, titlemap)
+
+band = ['B11','B8','B2']
+rgbViza = {"min":0.0, "max":0.7,"bands":band}
+titlemap = "Sentinel 2 - Agriculture"
+Map.addLayer(se2, rgbViza, titlemap)
+
+band = ['B11','B8','B4']
+rgbViza = {"min":0.0, "max":0.7,"bands":band}
+titlemap = "Sentinel 2 - Vegetation Analysis"
+Map.addLayer(se2, rgbViza, titlemap)
+
+band = ['B8','B11','B2']
+rgbViza = {"min":0.0, "max":0.7,"bands":band}
+titlemap = "Sentinel 2 - Healthy Vegetation"
+Map.addLayer(se2, rgbViza, titlemap)
+
 
 folium.Marker(
     location=map_center,
