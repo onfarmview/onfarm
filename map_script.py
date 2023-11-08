@@ -1,14 +1,7 @@
-
+#!pip install folium
 import folium
 
-# Create a map centered at a specific location
-map = folium.Map(location=[latitude, longitude], zoom_start=12)
-
-# Add a marker to the map
-folium.Marker(
-    location=[-43.64525717899288, 172.46137515298432],
-    popup='Marker Popup Text'
-).add_to(map)
-
-# Save the map as an HTML file
-map.save('map.html')
+map_1 = folium.Map(location=[-22.951916, -43.210466], zoom_start=15)
+folium.CircleMarker(location=[-22.951916, -43.210466], radius=15, popup="Christ the Redeemer").add_to(map_1)
+folium.Marker(location=[-22.951916, -43.210466], popup="Christ the Redeemer").add_to(map_1)
+map_1.save("map.html")
