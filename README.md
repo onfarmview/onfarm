@@ -1,6 +1,6 @@
 ## Webmap Features
-* Color layers depending on population
-* Information of Volcanoes in the Western Usa
+* 
+* 
 
 ## Using
 * Python
@@ -8,7 +8,7 @@
 * pandas
 
 ## Example Link
-* https://hrithikkothari1234.github.io/Webmap/index.html
+* https://onfarmview.com/map.html
 
 ## Details
 * Volcanoes info using Csv file
@@ -23,4 +23,4 @@ $ python web.py
 ```
 
 A .html gets created which is your webmap.
-![alt text](https://raw.githubusercontent.com/hrithikkothari1234/Webmap/master/example.png)
+![alt text]()
