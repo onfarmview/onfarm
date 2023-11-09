@@ -1,5 +1,5 @@
-## Webmap Features
-* 
+## OnFarmView
+* OnFarmView - Farm Monitoring Tools
 * 
 
 ## Using
@@ -11,8 +11,7 @@
 * https://onfarmview.com/map.html
 
 ## Details
-* Volcanoes info using Csv file
-* Country names , population etc using Json
+
 
 ## Setup
 To run this project , clone it and then:
@@ -23,4 +22,4 @@ $ python web.py
 ```
 
 A .html gets created which is your webmap.
-![alt text]()
+![alt text](https://github.com/thaitranphd/onfarm/blob/ab987ba21291e4ee3701fca37b9828b6c2467906/Capture.PNG)
