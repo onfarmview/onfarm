@@ -52,7 +52,21 @@
 
         footer .footer-right {
             float: right;
-        }
+                    }
+                    .head-column {
+                width: 33.33%;
+                float: left;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+
+            /* Adjust styles for better visibility */
+            .head-column {
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+            }
+
+
     </style>
 
     <title>OnFarmView - Farm Monitoring Tools</title>
@@ -121,13 +135,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+
+    <div class="head-column">
+        <a href="#">Login</a>
+        <a href="#">Newsletters</a>            
+        <p>Contact us at <a href="mailto:admin@onfarmview.com">admin@onfarmview.com</a>.</p>
+    </div>
+
 </head>
 <body>
-            <div class="menu">
-                <a href="#">Login</a>
-                <a href="#">Newsletters</a>            
-			    <p>Contact us at <a href="mailto:admin@onfarmview.com">admin@onfarmview.com</a>.</p>
-            </div>
+            
             <div class="folium-map" id="map_a103d5f6242ff5cc52059c7200a3d175" ></div>
         
     <a href='#' id='export'>Export</a>
