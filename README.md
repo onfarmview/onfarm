@@ -21,5 +21,5 @@ $ pip install pandas
 $ python web.py
 ```
 
-A .html gets created which is your webmap.
+## Map
 ![alt text](https://github.com/thaitranphd/onfarm/blob/ab987ba21291e4ee3701fca37b9828b6c2467906/Capture.PNG)
