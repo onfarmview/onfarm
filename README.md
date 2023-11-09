@@ -1,14 +1,14 @@
 ## OnFarmView
 * OnFarmView - Farm Monitoring Tools
-* 
+
 
 ## Using
 * Python
 * folium
 * pandas
 
-## Example Link
-* https://onfarmview.com/map.html
+## Link
+* https://onfarmview.com/
 
 ## Details
 
