@@ -28,11 +28,16 @@
             color: black;
         }
 
-        .footer-column {
-            display: inline-block;
-            width: 50%;
-            vertical-align: top;
-            box-sizing: border-box;
+        .left{
+            text-align:left;
+            float:left;
+            }
+            .right{
+            float:right;
+            text-align:right;
+            }
+            .centered{
+            text-align:center;
         }
     </style>
 
@@ -114,22 +119,21 @@
     <a href='#' id='export'>Export</a>
 </body>
 
+
+
 <footer>
-    <div class="footer-column">
+    <div id="footer">
         <p>&copy; 2023 OnFarmView. All rights reserved.</p>
-        <p><a href="mailto:admin@onfarmview.com">Contact Us</a></p>
-    
-        <div class="footer-column">
-            <nav>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer-column">
-            <!-- Histats.com  (div with counter) -->
+        <p 
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </nav>
+        </p>
+        <p <!-- Histats.com  (div with counter) -->
             <div id="histats_counter"></div>
             <!-- Histats.com  START  (aync)-->
             <script type="text/javascript">
@@ -145,7 +149,7 @@
             </script>
             <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4819636&101" alt="hit tracker" border="0"></a></noscript>
             <!-- Histats.com  END  -->
-        </div>
+        </p>
     </div>
 </footer>
 
