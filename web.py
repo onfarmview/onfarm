@@ -3,6 +3,7 @@ import pandas
 import geemap.foliumap as geemap
 import ee
 from datetime import date, timedelta, datetime
+
 def ee_authenticate(token_name="EARTHENGINE_TOKEN"):
     geemap.ee_initialize(token_name=token_name)
 def maskCloudAndShadows(image):
