@@ -19,6 +19,14 @@ To run this project , clone it and then:
 $ pip install folium
 $ pip install pandas
 $ python web.py
+    1 	git add .
+    2 	git commit -m "Initial commit"
+    3 	git remote add origin https://github.com/yourusername/your-repository.git
+    4 	git push -u origin master
+
+
+
+
 ```
 
 ## Map
