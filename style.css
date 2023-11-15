@@ -41,14 +41,14 @@ main {
 }
 
 .map {
-  width: 65%;
-  height: 700px; /* Adjust height as needed */
+  width: 75%;
+  height: 800px; /* Adjust height as needed */
   background-color: #f0f0f0; /* Placeholder color */
   margin-bottom: 10px;
 }
 
 .company-description {
-  width: 45%;
+  width: 22%;
   padding: 7px;
   background-color: #f9f9f9;
 }
