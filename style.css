@@ -34,21 +34,20 @@ nav ul li a {
 /* Main content styles */
 main {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column; /* Change to a single column layout */
+  align-items: stretch; /* Items stretch to full width */
   padding: 20px;
 }
 
 .map {
-  width: 75%;
+  width: 100%; /* Take full width */
   height: 600px; /* Adjust height as needed */
   background-color: #f0f0f0; /* Placeholder color */
   margin-bottom: 10px;
 }
 
 .company-description {
-  width: 22%;
+  width: 100%; /* Take full width */
   padding: 7px;
   background-color: #f9f9f9;
 }
