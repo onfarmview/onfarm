@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="style.css">  
 
     <title>OnFarmView - Farm Monitoring Tools</title>
 
@@ -83,25 +83,59 @@
 
 </head>
 <body>
+    <header>
+        <!-- Menu -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
     
-    
+    <main>
+        <!-- Map section -->
+        <section class="map">
+
             <div class="folium-map" id="map_9fbd4469f5a5cba04ec81eedcf513718" ></div>
+            <a href='#' id='export'>Export</a>
+
+        </section>
+    
         
-    <a href='#' id='export'>Export</a>
-</body>
-
-<footer>
-    <aside class="footer-left">
-        <p>&copy; 2023 OnFarmView. All rights reserved.</p>
-        <div class="menu">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>          
-            <a href="#">FAQs</a>         
+        <!-- Company Description -->
+        <section class="company-description">
+          <h2>About Our Company</h2>
+          <p>Welcome to XYZ Company! We are a leading provider of innovative solutions in...</p>
+    
+          <h3>Our Services</h3>
+          <ul>
+            <li>Service 1</li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+            <!-- Add more services as needed -->
+          </ul>
+    
+          <h3>Company Address</h3>
+          <p>123 Company Street, City Name, Country</p>
+    
+          <h3>Contact Information</h3>
+          <p>Email: <a href="mailto:admin@onfarmview.com">admin@onfarmview.com</a></p>
+          
+          <p>Phone: </p>
+        </section>
+    
+      </main>
             
-        </div>
+        
+    
 
-    </aside>
 
+  <footer>
+    <!-- Footer content -->
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
     <aside class="footer-right">
         <!-- Histats.com  (div with counter) -->
         <div id="histats_counter"></div>
@@ -120,7 +154,11 @@
         <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4819636&101" alt="hit tracker" border="0"></a></noscript>
         <!-- Histats.com  END  -->
     </aside>
-</footer>
+  </footer>
+
+
+</body>
+
 <script>
     
     
