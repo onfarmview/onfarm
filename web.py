@@ -29,7 +29,7 @@ def addDate(image):
     img_date = ee.Number.parse(img_date.format('YYYYMMdd'))
     return image.addBands(ee.Image(img_date).rename('date').toInt())
 
-ee_authenticate(token_name="4/1AfJohXkTlWMKd8fPevD3hd4tAq_j-YlD2CabTy7QtM7iu1gNB3XdBEqRehA")  #4/1AfJohXkTlWMKd8fPevD3hd4tAq_j-YlD2CabTy7QtM7iu1gNB3XdBEqRehA
+ee_authenticate(token_name="4/1AfJohXleDqw1-fV1879iHUDYgPbM7f5OjCKfxFY3vJiiGqQDn_ff-Luhhhk")  #4/1AfJohXkTlWMKd8fPevD3hd4tAq_j-YlD2CabTy7QtM7iu1gNB3XdBEqRehA
 
 map_center=(-43.525650, 172.639847)
 popup_message = 'Contact: admin@onfarmview.com'
