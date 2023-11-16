@@ -41,7 +41,7 @@ main {
 
 .map {
   width: 100%; /* Take full width */
-  height: 600px; /* Adjust height as needed */
+  height: 80%; /* Adjust height as needed */
   background-color: #f0f0f0; /* Placeholder color */
   margin-bottom: 10px;
 }
