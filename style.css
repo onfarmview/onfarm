@@ -40,7 +40,7 @@ main {
 }
 
 .map {
-  width: 100%; /* Take full width */  
+  width: 80%; /* Take full width */  
   height: 80%;
   background-color: #f0f0f0; /* Placeholder color */
   margin-bottom: 10px;
