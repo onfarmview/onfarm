@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+
+    <title>OnFarmView - Farm Monitoring Tools</title>
+
+    <meta name="keywords" content="Plant Monitor, Indices, NDVI Calculation, NDWI Interpretation, Near-Infrared Imaging, Crop Health Assessment, Plant Stress Detection, Moisture Content Analysis, RGB Imagery Evaluation, Precision Agriculture, Agricultural Spectral Analysis">
+
+    <meta name="description" content="Explore a wide range of vegetation indices, including NDVI and NDWI, to assess the health and vigor of crops. Analyze Near-Infrared (NIR) imagery for detailed insights into plant stress levels and moisture content. View high-resolution Red-Green-Blue (RGB) imagery for visual assessments and mapping. OnFarmView provides powerful tools for precise agricultural analysis.">
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
         <script>
@@ -64,11 +73,57 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
 </head>
 <body>
+    <header>
+        <!-- Menu -->
+        <nav>
+          <ul>
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
     
-    
+           
+
+    <main>
+        <!-- Map section -->
+        <section class="map">
+
             <div class="folium-map" id="map_052e7deee9d7f31ed6c03de3bec28cc0" ></div>
         
-    <a href='#' id='export'>Export</a>
+            <a href='#' id='export'>Export</a>
+
+        </section>         
+       
+    
+      </main>
+
+       
+  <footer>
+    <!-- Footer content -->
+    <p>&copy; 2023 On Farm View. All rights reserved.</p>
+    <aside class="footer-right">
+        <!-- Histats.com  (div with counter) -->
+        <div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">
+            var _Hasync= _Hasync|| [];
+            _Hasync.push(['Histats.start', '1,4819636,4,29,115,60,00011111']);
+            _Hasync.push(['Histats.fasi', '1']);
+            _Hasync.push(['Histats.track_hits', '']);
+            (function() {
+                var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+                hs.src = ('//s10.histats.com/js15_as.js');
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+            })();
+        </script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4819636&101" alt="hit tracker" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+    </aside>
+  </footer>
 </body>
 <script>
     
