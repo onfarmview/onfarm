@@ -1,0 +1,64 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  flex-direction: column; /* Change to a single column layout */
+  align-items: stretch; /* Items stretch to full width */
+  padding: 20px;
+}
+
+.map {
+  width: 100%; /* Take full width */  
+  height: 650px;
+  background-color: #f0f0f0; /* Placeholder color */
+  margin-bottom: 10px;
+}
+
+.company-description {
+  width: 100%; /* Take full width */
+  padding: 7px;
+  background-color: #f9f9f9;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
