@@ -40,8 +40,8 @@ main {
 }
 
 .map {
-  width: 100%; /* Take full width */  
-  height: 650px;
+  width: 90%; /* Take full width */  
+  height: 600px;
   background-color: #f0f0f0; /* Placeholder color */
   margin-bottom: 10px;
 }
