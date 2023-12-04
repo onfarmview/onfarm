@@ -8,6 +8,9 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  height: 100vh; /* Set body height to full viewport height */
+  margin: 0; /* Ensure no default margin */
+  position: relative; /* Establish a positioning context for absolute elements */
 }
 
 /* Header styles */
@@ -55,4 +58,5 @@ footer {
   position: absolute;
   bottom: 0;
   width: 90%;
+  height: 10%; /* Set footer height to 10% of body height */
 }
