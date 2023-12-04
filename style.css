@@ -57,6 +57,6 @@ footer {
   padding: 6px;
   position: absolute;
   bottom: 0;
-  width: 90%;
-  height: 10%; /* Set footer height to 10% of body height */
+  width: 10%;
+  height: 5%; /* Set footer height to 10% of body height */
 }
