@@ -54,9 +54,10 @@ footer {
   background-color: rgba(240, 240, 240, 0); /* Transparent background */
   color: #fff;
   text-align: left;
-  padding: 6px;
+  padding: 5px;
   position: absolute;
   bottom: 0;
+  left: 0; /* Position the footer to the left edge of the page */
   width: 10%;
   height: 5%; /* Set footer height to 10% of body height */
 }
