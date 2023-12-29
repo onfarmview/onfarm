@@ -41,7 +41,12 @@ main {
   align-items: stretch; /* Items stretch to full width */
   padding: 20px;
 }
-
+.wrapper {
+          position: relative;
+          z-index: 1;
+          display: inline-block;
+          width: 100vw;
+        }
 .map {
   width: 100%; /* Take full width */  
   height: 600px;
