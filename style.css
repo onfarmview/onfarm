@@ -48,8 +48,24 @@ main {
   background-color: #f0f0f0; /* Placeholder color */
   margin-bottom: 10px;
 }
-
-/* Footer styles */
+.hidefooter {
+          position: absolute;
+          width: 150px;
+          height: 35px;
+          background: rgb(242,240,246);
+          right: 0px;
+          bottom: 0px;
+          z-index: 2;
+          display: block;
+          color: rgb(0, 0, 0);
+}
+iframe {
+  display: block;
+  background: #ffffff;
+  border: none;
+  height: 99vh;
+  width: 99vw;
+}
 footer {
   background-color: #333 ; /* Transparent background rgba(240, 240, 240, 0)*/
   color: #fff;
