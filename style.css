@@ -49,14 +49,14 @@ main {
         }
 .map {
   width: 100%; /* Take full width */  
-  height: 90%;
+  height: 100%;
   background-color: #f0f0f0; /* Placeholder color */
   margin-bottom: 10px;
 }
 .hidefooter {
           position: absolute;
-          width: 150px;
-          height: 35px;
+          width: 10px;
+          height: 5px;
           background: rgb(242,240,246);
           right: 0px;
           bottom: 0px;
@@ -79,6 +79,6 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0; /* Position the footer to the left edge of the page */
-  width: 10%;
+  width: 5%;
   height: 5%; /* Set footer height to 10% of body height */
 }
